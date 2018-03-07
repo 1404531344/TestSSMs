@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml"
+      xmlns:cellspacing="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>bootsrap</title>
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../plugs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../plugs/bootstrap/css/bootstrap-select.min.css">
+
+
+
+</head>
+<body style="background:#edf6fa;">
+	
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="table.html">table页面</a></li>
+    </ul>
+   </div>   
+
+	
+<div id="exam" >
+
+    <div class="left btn-group">
+        <!--增加按钮-->
+        <div class="right btn-group" style="padding-top: 10px;padding-bottom: 10px">
+        <button type="button"  data-toggle="modal" v-on:click="conversion_stu()" data-target="#student"  style="width:50px ;height:25px ;font-size: 10px ;">增加</button>
+        </div>
+   <!--模糊搜索-->
+        <div class="right btn-group" style="padding-left: 100px;padding-top: 10px;padding-bottom: 10px">
+            <input type="text"  placeholder="搜索" class="form-control" style="height: 25px">
+        </div>
+
+    </div>
+
+
+
+
+    <div id="student" class="modal fade" tabindex="-1" oler="dialog"  labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4>{{modal_title}}</h4>
+                </div>
+                <form id="form2" class="form-horizontal" >
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <input class="hidden" name="pid" v-bind:value="person_By.pid"  />
+                            <label class="col-sm-3 control-label" >学生姓名</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control"  name="pname" v-bind:value="person_By.pname"  placeholder="请输入学生姓名">
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" >学生年龄</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control"  name="page" v-bind:value="person_By.page"  placeholder="请输入学生年龄">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default"  data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary"  v-on:click="save_student()">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <table class="table table-bordered table-hover table-responsive " >
+        <tr><td>编号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>操作</td>
+        </tr>
+        <tr v-for="p in person"  >
+            <td >{{p.pid}}</td>
+            <td >{{p.pname}}</td>
+            <td >{{p.page}}</td>
+
+            <td><button style="width:50px ;height:25px ;font-size: 10px"  v-on:click="queryById_stu(p.pid)" type="button"  data-toggle="modal" data-target="#student" >修改</button> &nbsp;&nbsp;  <button style="width:50px ;height:25px ;font-size: 10px"  v-on:click="del_(p.pid)" data-toggle="modal"  data-target="#myConfirm" type="button">删除</button></td>
+        </tr>
+    </table>
+
+    <div class='modal fade' id='myConfirm' >
+
+        <div class='modal-backdrop in' style='opacity:0; '></div>
+        <div class='modal-dialog' style='z-index:2901; margin-top:60px; width:400px; '>
+            <div class='modal-content'>
+                <div class='modal-header'  style='font-size:16px; '>
+                    <span class='glyphicon glyphicon-envelope'>&nbsp;</span>信息！<button type='button' class='close' data-dismiss='modal'></button>
+                    &times;</div>
+                <div class='modal-body text-center' id='myConfirmContent' style='font-size:18px; '>
+                    是否确定要删除？
+                </div>
+                <div class='modal-footer ' style=''>
+                    <button class='btn btn-danger ' id='confirmOk' v-on:click="del_person()" >确定</button>
+
+                    <button class='btn btn-info ' data-dismiss='modal'>取消</button>
+                </div></div></div>
+    </div>
+
+
+</div>
+
+
+<script src="../../plugs/jquery/jquery.min.js"></script>
+<script src="../../plugs/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../plugs/js/vue.min.js"></script>
+<script>
+    var app_exam=new Vue({
+        el:'#exam',
+        data:{person:{},del_person_id:'',modal_title:'增加',url_action:'',person_By:'',queryBy:''},
+        methods:{
+            //查询所有
+            inqire_person:function () {
+                var _this=this;
+                $.ajax({
+                    url:'/getPersons.action',
+                    type:'post',
+                    dataType:'json',
+                    success:function (data) {
+                        _this.person=data;
+                    }
+                })
+            },
+
+            //增加的方法
+            conversion_stu:function () {
+                this.modal_title='增加';
+                var _this=this;
+                $.ajax({
+                    url:'/getMaxId.action',
+                    type:'get',
+                    success:function (date) {
+                         _this.person_By=data ;
+                    }
+                });
+
+            },
+            //根据id查询(点击修改时)
+            queryById_stu:function(id){
+                var _this=this;
+
+                this.modal_title='修改';
+                $.ajax({
+                    type:"get",
+                    dataType:'json',
+                    data:'pid='+id,
+                    url:"/queryAllById.action",
+                    success:function(data){
+                        _this.person_By=data;
+                    }
+                });
+            },
+            //增加与修改的方法
+            save_student:function () {
+                var _this=this;
+                if(_this.modal_title=="增加"){
+                    _this.url_action="/addPerson.action";
+                }
+                else if(_this.modal_title=="修改"){
+                    _this.url_action="/update.action";
+                }
+                var text=$("#form2").serialize();
+                $.ajax({
+                    url:_this.url_action,
+                    type:'get',
+                    data:text,
+                    success:function () {
+                        $("#student").modal('hide');
+                        _this.person_By="";
+                        _this.inqire_person();
+                    }
+                });
+            },
+
+            //点击删除的方法
+            del_:function(id) {
+                this.del_person_id=id;
+
+            },
+            //确认删除后的方法
+            del_person:function(id){
+                var _this=this;
+                $.ajax({
+                    type:"get",
+                    url:"/delStudent.action",
+                    data:'pid='+_this.del_person_id,
+                    success:function(){
+                        $("#myConfirm").modal('hide');
+                        _this.inqire_person();
+                    }
+                });
+            },
+
+
+
+        }
+    });
+    app_exam.inqire_person();
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zking.dao.PersonDao">
+    <select id="getPersons" resultType="com.zking.entity.person">
+        select * from person
+    </select>
+    <select id="queryAllById" parameterType="int" resultType="com.zking.entity.person">
+        select * from person WHERE pid=#{pid}
+    </select>
+
+    <select id="getMaxId" parameterType="int" resultType="com.zking.entity.person">
+        select max(pid) pid from person
+    </select>
+
+    <select id="queryLike" parameterType="int" resultType="com.zking.entity.person">
+           select *  from person where  pname like #{%}#{pname}#{%} or page like #{%}#{pname}#{%} or pid like #{%}#{pname}#{%}
+    </select>
+
+    <insert id="addPerson" parameterType="com.zking.entity.person">
+        INSERT INTO person(pname,page) VALUES(#{pname},#{page});
+    </insert>
+
+    <delete id="delStudent" parameterType="com.zking.entity.person">
+        DELETE from person where pid=#{pid}
+    </delete>
+
+    <update id="update" parameterType="com.zking.entity.person">
+        update person SET  pname=#{pname},page=#{page} where pid=#{pid}
+    </update>
+</mapper>
