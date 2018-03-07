@@ -4,6 +4,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.zking.dao.PersonDao">
+
+    <sql id="Base_Column_List" >
+        pid, pname, page
+    </sql>
+
     <select id="getPersons" resultType="com.zking.entity.person">
         select * from person
     </select>
@@ -15,8 +20,13 @@
         select max(pid) pid from person
     </select>
 
-    <select id="queryLike" parameterType="int" resultType="com.zking.entity.person">
-           select *  from person where  pname like #{%}#{pname}#{%} or page like #{%}#{pname}#{%} or pid like #{%}#{pname}#{%}
+    <select id="queryLike" parameterType="int" resultType="com.zking.entity.person" >
+        select <include refid="Base_Column_List"/> from person
+        <where>
+
+                pname like "%"#{pname}"%" or pid like "%"#{pname}"%" or page like "%"#{pname}"%"
+
+        </where>
     </select>
 
     <insert id="addPerson" parameterType="com.zking.entity.person">

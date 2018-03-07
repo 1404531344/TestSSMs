@@ -12,9 +12,9 @@
 </head>
 <body>
 
-<form action="/addPerson.action" method="get">
-    <input type="text" name="pname"></br>
-    <input type="text" name="page"></br>
+<form action="/queryLike.action" method="get">
+    <input type="text" name="pid"></br>
+    <%--<input type="text" name="pid"></br>--%>
     <button type="submit">提交</button>
 
 </form>
