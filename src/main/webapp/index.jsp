@@ -9,6 +9,11 @@
 <html>
 <head>
     <title>Title</title>
+
+    <link rel="stylesheet" href="../../plugs/bootstrap/css/bootstrap.min.css">
+    <script src="../../plugs/jquery/jquery.min.js"></script>
+    <script src="../../plugs/bootstrap/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
@@ -18,5 +23,8 @@
     <button type="submit">提交</button>
 
 </form>
+
+<span class="glyphicon glyphicon-search" aria-hidden="true"></span><br>
+
 </body>
 </html>

@@ -64,12 +64,32 @@ public class PersonController {
         return data;
     }
 
+    //    查询所有数量
+    @ResponseBody
+    @RequestMapping("getCount")
+    public String getCount(){
+        System.out.println("查询所有数量");
+        person count=personDao.getCount();
+        String data=JSON.toJSONString(count);
+        return data;
+    }
+
     //    模糊查询
     @ResponseBody
     @RequestMapping("queryLike")
     public String queryLike(person person){
         System.out.println("模糊查询");
         List<person> list=personDao.queryLike(person);
+        String  data = JSON.toJSONString(list);
+        return data;
+    }
+
+    //    分页查询
+    @ResponseBody
+    @RequestMapping("pageQuery")
+    public String pageQuery(int begins ,int counts){
+        System.out.println("模糊查询");
+        List<person> list=personDao.pageQuery(begins , counts);
         String  data = JSON.toJSONString(list);
         return data;
     }

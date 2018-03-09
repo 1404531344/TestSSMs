@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>bootsrap</title>
-    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../../plugs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../plugs/bootstrap/css/bootstrap-select.min.css">
+    <link rel="stylesheet"  href="../../css/style.css" >
+    <!--<link rel="stylesheet" href="../../plugs/bootstrap/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 
+    <style type="text/css">
+        .u-pages li{float: left;padding: 10px}
+    </style>
 
 
 </head>
@@ -23,22 +26,28 @@
 
 	
 <div id="exam" >
-
+    <!--按钮模块-->
     <div class="left btn-group">
         <!--增加按钮-->
         <div class="right btn-group" style="padding-top: 10px;padding-bottom: 10px">
         <button type="button"  data-toggle="modal" v-on:click="conversion_stu()" data-target="#student"  style="width:50px ;height:25px ;font-size: 10px ;">增加</button>
         </div>
-   <!--模糊搜索-->
+   <!--模糊查询框-->
         <div class="right btn-group" style="padding-left: 100px;padding-top: 10px;padding-bottom: 10px">
-            <input type="text"  placeholder="搜索" class="form-control" style="height: 25px">
+
+                <input type="text"  placeholder="搜索" class="form-control" style="height: 25px" name="pname" id="queryLike" >
+        </div>
+        <!--模糊查询按钮-->
+        <div style="float: left ;padding-left: 10px; padding-top: 15px">
+            <button style="background-color:#edf6fa;"  v-on:click="inqire_person()" >
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+
         </div>
 
     </div>
 
-
-
-
+    <!--增加模块-->
     <div id="student" class="modal fade" tabindex="-1" oler="dialog"  labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -78,7 +87,7 @@
         </div>
     </div>
 
-
+    <!--表格模块-->
     <table class="table table-bordered table-hover table-responsive " >
         <tr><td>编号</td>
             <td>姓名</td>
@@ -94,6 +103,26 @@
         </tr>
     </table>
 
+    <!--分页-->
+    <div class="u-pages" style="margin-bottom:30px; margin-top:10px; ">
+        <ul>
+
+
+            <li  class="crt"><a> &lt;&lt; </a></li><!--首页-->
+            <li  class="crt"><a > &lt; </a></li><!--上一页-->
+
+            <template  >
+                <li ><a></a></li>
+            </template>
+
+
+            <li  class="crt"><a> &gt;</a></li><!--下一页-->
+            <li  class="crt"><a > &gt;&gt; </a></li><!--尾页-->
+
+        </ul>
+    </div>
+
+    <!--删除模块-->
     <div class='modal fade' id='myConfirm' >
 
         <div class='modal-backdrop in' style='opacity:0; '></div>
@@ -116,19 +145,35 @@
 </div>
 
 
-<script src="../../plugs/jquery/jquery.min.js"></script>
-<script src="../../plugs/bootstrap/js/bootstrap.min.js"></script>
-<script src="../../plugs/js/vue.min.js"></script>
+    <script src="../../plugs/jquery/jquery.min.js"></script>
+<!--<script src="../../plugs/bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../plugs/js/vue.min.js"></script>
+
 <script>
     var app_exam=new Vue({
         el:'#exam',
-        data:{person:{},del_person_id:'',modal_title:'增加',url_action:'',person_By:'',queryBy:''},
+        data:{person:{},
+              del_person_id:'',
+              modal_title:'增加',
+              url_action:'', person_By:'',
+              begin:'',
+              count:'',
+              MaxCount:""
+             },
         methods:{
             //查询所有
             inqire_person:function () {
                 var _this=this;
+                var queryLike_value =  $('#queryLike').val();
+                if(queryLike_value!=null){
+                    _this.url_action='/queryLike.action?pname='+queryLike_value;
+                }
+                else {
+                    _this.url_action='/getPersons.action'
+                }
                 $.ajax({
-                    url:'/getPersons.action',
+                    url:_this.url_action,
                     type:'post',
                     dataType:'json',
                     success:function (data) {
@@ -206,11 +251,25 @@
                 });
             },
 
+        //    查询最大数量
+            getMaxCount:function(){
+                var _this=this;
+
+                $.ajax({
+                    type:"get",
+                    url:"/getMaxCount.action",
+                    success:function(data){
+                        _this.MaxCount=data;
+                    }
+                });
+            }
+
 
 
         }
     });
     app_exam.inqire_person();
+
 
 
 </script>

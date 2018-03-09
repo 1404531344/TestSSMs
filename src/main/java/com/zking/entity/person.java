@@ -7,12 +7,17 @@ public class person {
 
     private String page;
 
+    private int begins;
+
+    private int counts;
 
 
-    public person(Integer pid, String pname, String page) {
+    public person(Integer pid, String pname, String page, int begins, int counts) {
         this.pid = pid;
         this.pname = pname;
         this.page = page;
+        this.begins = begins;
+        this.counts = counts;
     }
 
     public person() {
@@ -41,5 +46,21 @@ public class person {
 
     public void setPage(String page) {
         this.page = page;
+    }
+
+    public int getBegins() {
+        return begins;
+    }
+
+    public void setBegins(int begins) {
+        this.begins = begins;
+    }
+
+    public int getCounts() {
+        return counts;
+    }
+
+    public void getCount(int counts) {
+        this.counts = counts;
     }
 }
