@@ -3,6 +3,7 @@ package com.zking.controller;
 import com.alibaba.fastjson.JSON;
 
 import com.zking.dao.studentMapper;
+import com.zking.entity.person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,8 +19,8 @@ public class studentController {
 
     @ResponseBody
     @RequestMapping("selectByPrimaryKey")
-    public String selectByPrimaryKey(){
-        student student = studentMapper.selectByPrimaryKey(1);
+    public String selectByPrimaryKey(int sid){
+        student student = studentMapper.selectByPrimaryKey(sid);
         String data = JSON.toJSONString(student);
         return data;
     }
@@ -32,5 +33,7 @@ public class studentController {
         String data = JSON.toJSONString(student);
         return data;
     }
+
+
 
 }

@@ -14,7 +14,7 @@
     </select>
 
     <select id="queryAllById" parameterType="int" resultType="com.zking.entity.person">
-        select * from person WHERE pid=#{pid}
+        select * from person WHERE pid=#{id}
     </select>
 
     <select id="getMaxId" parameterType="int" resultType="com.zking.entity.person">
@@ -31,11 +31,11 @@
     </select>
 
     <select id="getCount" parameterType="int" resultType="com.zking.entity.person">
-        select count(*) counts from person
+        select count(*) count  from person
     </select>
 
     <select id="pageQuery" resultType="com.zking.entity.person">
-        select * from person limit begins=#{begins},counts={counts}
+        select * from person limit #{begin},5
     </select>
 
     <insert id="addPerson" parameterType="com.zking.entity.person">

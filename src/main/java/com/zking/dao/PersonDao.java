@@ -20,7 +20,7 @@ public interface PersonDao {
 
     public List<person> queryLike(person person);  //模糊查询
 
-    public List<person> pageQuery(int begins , int counts);           //分页查询
+    public List<person> pageQuery(int begin);  //分页查询
 
     public person  getCount();                 //得到所有数量
 
@@ -29,6 +29,8 @@ public interface PersonDao {
     public void delStudent(int pid);         //删除
 
     public void update(person person);       //修改
+
+
 
 
 

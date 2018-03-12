@@ -5,19 +5,15 @@ public class person {
 
     private String pname;
 
-    private String page;
+     private String page;
 
-    private int begins;
+    private Integer count;
 
-    private int counts;
-
-
-    public person(Integer pid, String pname, String page, int begins, int counts) {
+    public person(Integer pid, String pname, String page, Integer count) {
         this.pid = pid;
         this.pname = pname;
         this.page = page;
-        this.begins = begins;
-        this.counts = counts;
+        this.count = count;
     }
 
     public person() {
@@ -48,19 +44,11 @@ public class person {
         this.page = page;
     }
 
-    public int getBegins() {
-        return begins;
+    public Integer getCount() {
+        return count;
     }
 
-    public void setBegins(int begins) {
-        this.begins = begins;
-    }
-
-    public int getCounts() {
-        return counts;
-    }
-
-    public void getCount(int counts) {
-        this.counts = counts;
+    public void setCount(Integer count) {
+        this.count = count;
     }
 }

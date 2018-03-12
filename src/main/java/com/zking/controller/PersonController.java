@@ -70,7 +70,7 @@ public class PersonController {
     public String getCount(){
         System.out.println("查询所有数量");
         person count=personDao.getCount();
-        String data=JSON.toJSONString(count);
+        String data=count.getCount().toString();
         return data;
     }
 
@@ -87,12 +87,13 @@ public class PersonController {
     //    分页查询
     @ResponseBody
     @RequestMapping("pageQuery")
-    public String pageQuery(int begins ,int counts){
+    public String pageQuery(int begin){
         System.out.println("模糊查询");
-        List<person> list=personDao.pageQuery(begins , counts);
+        List<person> list=personDao.pageQuery(begin);
         String  data = JSON.toJSONString(list);
         return data;
     }
+
 
     //    删除
     @ResponseBody
