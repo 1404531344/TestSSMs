@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -15,7 +16,7 @@ import java.util.List;
  */
 @Controller
 public class PersonController {
-
+HttpServletResponse response;
     @Autowired
     private PersonDao personDao;
 
@@ -37,21 +38,21 @@ public class PersonController {
 //    查询所有
     @ResponseBody
     @RequestMapping("getPersons")
-    public String getPersons(){
+    public List<person> getPersons(){
         System.out.println("查询所有");
         List<person> list=personDao.getPersons();
+        System.out.println("ok"+list.size());
         String data = JSON.toJSONString(list);
-        return data;
+        return list;
     }
 
     //    查询单个所有
     @ResponseBody
     @RequestMapping("queryAllById")
-    public String queryAllById(int pid){
+    public person queryAllById(int pid){
         System.out.println("查询单个所有");
         person person=personDao.queryAllById(pid);
-        String data = JSON.toJSONString(person);
-        return data;
+        return person;
     }
 
     //    查询最大id
@@ -77,21 +78,18 @@ public class PersonController {
     //    模糊查询
     @ResponseBody
     @RequestMapping("queryLike")
-    public String queryLike(person person){
+    public List<person> queryLike(person person){
         System.out.println("模糊查询");
         List<person> list=personDao.queryLike(person);
-        String  data = JSON.toJSONString(list);
-        return data;
+        return list;
     }
 
     //    分页查询
     @ResponseBody
     @RequestMapping("pageQuery")
-    public String pageQuery(int begin){
-        System.out.println("模糊查询");
+    public List<person> pageQuery(int begin){
         List<person> list=personDao.pageQuery(begin);
-        String  data = JSON.toJSONString(list);
-        return data;
+        return list;
     }
 
 
@@ -117,11 +115,11 @@ public class PersonController {
         return "success";
     }
 
-@   ResponseBody
+@ResponseBody
     @RequestMapping("test")
     public String test(){
         System.out.println("进来了");
-        return "fzfzfzfz";
+        return "sadfasdfaSWfdsfssssss";
     }
 
 

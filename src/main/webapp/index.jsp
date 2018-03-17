@@ -17,14 +17,20 @@
 </head>
 <body>
 
-<form action="/queryLike.action" method="get">
-    <input type="text" name="pid"></br>
-    <%--<input type="text" name="pid"></br>--%>
-    <button type="submit">提交</button>
+<form action="/fz.action" method="get">
+  <%--编号：  <input type="text" name="pid"></br>--%>
+
+
+    <%--<select name="stateplan">--%>
+        <%--<option value ="正在进行中">正在进行中</option>--%>
+        <%--<option value ="已完成">已完成</option>--%>
+    <%--</select>--%>
+      <input id="man" type="radio" checked="checked" name="sex" value="男"/>男 &nbsp;&nbsp;&nbsp;<input id="woman" type="radio"  name="sex" value="女"/>女
+      <button type="submit">提交</button>
 
 </form>
 
-<span class="glyphicon glyphicon-search" aria-hidden="true"></span><br>
+
 
 </body>
 </html>
