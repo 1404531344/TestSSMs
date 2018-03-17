@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zking.dao.tb_fu_patientMapper" >
+  <resultMap id="BaseResultMap" type="com.zking.entity.tb_fu_patient" >
+    <constructor >
+      <idArg column="ID" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="patient_sex" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="patient_name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="cardID" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="patient_age" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, patient_sex, patient_name, cardID, patient_age
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from tb_fu_patient
+    where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="delTb_fu_patient" parameterType="java.lang.Integer" >
+    delete from tb_fu_patient
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="addTb_fu_patient" parameterType="com.zking.entity.tb_fu_patient" >
+    insert into tb_fu_patient (ID, patient_sex, patient_name,
+      cardID, patient_age)
+    values (#{id,jdbcType=INTEGER}, #{patient_sex,jdbcType=VARCHAR}, #{patient_name,jdbcType=VARCHAR},
+      #{cardid,jdbcType=VARCHAR}, #{patient_age,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zking.entity.tb_fu_patient" >
+    insert into tb_fu_patient
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="patient_sex != null" >
+        patient_sex,
+      </if>
+      <if test="patient_name != null" >
+        patient_name,
+      </if>
+      <if test="cardid != null" >
+        cardID,
+      </if>
+      <if test="patient_age != null" >
+        patient_age,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="patient_sex != null" >
+        #{patient_sex,jdbcType=VARCHAR},
+      </if>
+      <if test="patient_name != null" >
+        #{patient_name,jdbcType=VARCHAR},
+      </if>
+      <if test="cardid != null" >
+        #{cardid,jdbcType=VARCHAR},
+      </if>
+      <if test="patient_age != null" >
+        #{patient_age,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zking.entity.tb_fu_patient" >
+    update tb_fu_patient
+    <set >
+      <if test="patient_sex != null" >
+        patient_sex = #{patient_sex,jdbcType=VARCHAR},
+      </if>
+      <if test="patientName != null" >
+        patient_name = #{patientName,jdbcType=VARCHAR},
+      </if>
+      <if test="cardid != null" >
+        cardID = #{cardid,jdbcType=VARCHAR},
+      </if>
+      <if test="patientAge != null" >
+        patient_age = #{patientAge,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateTb_fu_patient" parameterType="com.zking.entity.tb_fu_patient" >
+    update tb_fu_patient
+    set patient_sex = #{patient_sex,jdbcType=VARCHAR},
+      patient_name = #{patient_name,jdbcType=VARCHAR},
+      cardID = #{cardid,jdbcType=VARCHAR},
+      patient_age = #{patient_age,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="getCountTb_fu_patient" parameterType="int" resultType="com.zking.entity.tb_fu_patient">
+    select count(*) count  from tb_fu_patient
+  </select>
+
+
+  <select id="queryLikeTb_fu_patient" parameterType="int" resultType="com.zking.entity.tb_fu_patient" >
+    select <include refid="Base_Column_List"/> from tb_fu_patient
+    <where>
+      id  like "%"#{patient_name}"%" or  patient_name like "%"#{patient_name}"%" or cardID like "%"#{patient_name}"%" or patient_sex like "%"#{patient_name}"%" or patient_age like "%"#{patient_name}"%"
+    </where>
+  </select>
+
+  <select id="getTb_fu_patientMaxd" parameterType="int" resultType="com.zking.entity.tb_fu_patient">
+    select max(id) id from tb_fu_patient
+  </select>
+
+  <select id="queryAllByTb_fu_patientId" parameterType="int" resultType="com.zking.entity.tb_fu_patient">
+    select * from  tb_fu_patient where  id=#{id}
+  </select>
+
+  <select id="pageQueryTb_fu_patient" resultType="com.zking.entity.tb_fu_patient">
+    select * from tb_fu_patient limit #{begin},5
+  </select>
+
+  <select id="getTb_fu_patientMaxId" parameterType="int" resultType="com.zking.entity.tb_fu_patient">
+    select max(id) id from tb_fu_patient
+  </select>
+
+
+</mapper>

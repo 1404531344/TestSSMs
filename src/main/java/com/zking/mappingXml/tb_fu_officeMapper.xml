@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zking.dao.tb_fu_officeMapper" >
+  <resultMap id="BaseResultMap" type="com.zking.entity.tb_fu_office" >
+    <constructor >
+      <idArg column="ID" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="office_name" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, office_name
+  </sql>
+  <select id="selectByPrimaryKeyOffice" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_fu_office
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKeyOffice" parameterType="java.lang.Integer" >
+    delete from tb_fu_office
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insertOffice" parameterType="com.zking.entity.tb_fu_office" >
+    insert into tb_fu_office (ID, office_name)
+    values (#{id,jdbcType=INTEGER}, #{office_name,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zking.entity.tb_fu_office" >
+    insert into tb_fu_office
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="office_name != null" >
+        office_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="office_name != null" >
+        #{office_name,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zking.entity.tb_fu_office" >
+    update tb_fu_office
+    <set >
+      <if test="office_name != null" >
+        office_name = #{office_name,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyOffice" parameterType="com.zking.entity.tb_fu_office" >
+    update tb_fu_office
+    set office_name = #{office_name,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="pageQueryTb_fu_office" resultType="com.zking.entity.tb_fu_office">
+    select * from tb_fu_office limit #{begin},5
+  </select>
+
+  <select id="queryLikeTb_fu_office" parameterType="int" resultType="com.zking.entity.tb_fu_office" >
+    select <include refid="Base_Column_List"/> from tb_fu_office
+    <where>
+      ID  like "%"#{office_name}"%" or  office_name like "%"#{office_name}"%"
+    </where>
+  </select>
+
+  <select id="getMaxIdOffice" parameterType="int" resultType="com.zking.entity.tb_fu_office">
+    select max(id) id from tb_fu_office
+  </select>
+
+
+  <select id="queryAllByIdOffice" parameterType="int" resultType="com.zking.entity.tb_fu_office">
+    select * from  tb_fu_office where  id=#{id}
+  </select>
+
+  <select id="getCountOffice" parameterType="int" resultType="com.zking.entity.tb_fu_office">
+    select count(*) count  from tb_fu_office
+  </select>
+
+
+
+</mapper>

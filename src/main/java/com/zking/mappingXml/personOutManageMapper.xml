@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zking.dao.personOutManageMapper" >
+  <resultMap id="BaseResultMap" type="com.zking.entity.personOutManage" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="sex" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="age" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="mobile" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="jbName" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="bedNum" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="principal" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="door" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="date" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="type" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="configured" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="statePlan" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name, sex, age, mobile, jbName, bedNum, principal, door, date, type, configured, 
+    statePlan
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from personoutmanage
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from personoutmanage
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zking.entity.personOutManage" >
+    insert into personoutmanage (id, name, sex, 
+      age, mobile, jbName, 
+      bedNum, principal, door, 
+      date, type, configured, 
+      statePlan)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, 
+      #{age,jdbcType=INTEGER}, #{mobile,jdbcType=VARCHAR}, #{jbname,jdbcType=VARCHAR}, 
+      #{bednum,jdbcType=INTEGER}, #{principal,jdbcType=VARCHAR}, #{door,jdbcType=VARCHAR}, 
+      #{date,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{configured,jdbcType=VARCHAR}, 
+      #{stateplan,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zking.entity.personOutManage" >
+    insert into personoutmanage
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="age != null" >
+        age,
+      </if>
+      <if test="mobile != null" >
+        mobile,
+      </if>
+      <if test="jbname != null" >
+        jbName,
+      </if>
+      <if test="bednum != null" >
+        bedNum,
+      </if>
+      <if test="principal != null" >
+        principal,
+      </if>
+      <if test="door != null" >
+        door,
+      </if>
+      <if test="date != null" >
+        date,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="configured != null" >
+        configured,
+      </if>
+      <if test="stateplan != null" >
+        statePlan,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null" >
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="mobile != null" >
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="jbname != null" >
+        #{jbname,jdbcType=VARCHAR},
+      </if>
+      <if test="bednum != null" >
+        #{bednum,jdbcType=INTEGER},
+      </if>
+      <if test="principal != null" >
+        #{principal,jdbcType=VARCHAR},
+      </if>
+      <if test="door != null" >
+        #{door,jdbcType=VARCHAR},
+      </if>
+      <if test="date != null" >
+        #{date,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="configured != null" >
+        #{configured,jdbcType=VARCHAR},
+      </if>
+      <if test="stateplan != null" >
+        #{stateplan,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zking.entity.personOutManage" >
+    update personoutmanage
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null" >
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="mobile != null" >
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="jbname != null" >
+        jbName = #{jbname,jdbcType=VARCHAR},
+      </if>
+      <if test="bednum != null" >
+        bedNum = #{bednum,jdbcType=INTEGER},
+      </if>
+      <if test="principal != null" >
+        principal = #{principal,jdbcType=VARCHAR},
+      </if>
+      <if test="door != null" >
+        door = #{door,jdbcType=VARCHAR},
+      </if>
+      <if test="date != null" >
+        date = #{date,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="configured != null" >
+        configured = #{configured,jdbcType=VARCHAR},
+      </if>
+      <if test="stateplan != null" >
+        statePlan = #{stateplan,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zking.entity.personOutManage" >
+    update personoutmanage
+    set name = #{name,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      age = #{age,jdbcType=INTEGER},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      jbName = #{jbname,jdbcType=VARCHAR},
+      bedNum = #{bednum,jdbcType=INTEGER},
+      principal = #{principal,jdbcType=VARCHAR},
+      door = #{door,jdbcType=VARCHAR},
+      date = #{date,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      configured = #{configured,jdbcType=VARCHAR},
+      statePlan = #{stateplan,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+
+  <select id="getPersonManage" resultType="com.zking.entity.personOutManage">
+    select * from personOutManage
+  </select>
+
+  <select id="pageQueryPersonOutManage" resultType="com.zking.entity.personOutManage">
+    select * from personOutManage limit #{begin},5
+  </select>
+
+  <select id="queryLikePersonOutManage" parameterType="int" resultType="com.zking.entity.personOutManage" >
+    select <include refid="Base_Column_List"/> from personOutManage
+    <where>
+      id  like "%"#{name}"%" or  name like "%"#{name}"%" or sex like "%"#{name}"%" or age like "%"#{name}"%" or mobile like "%"#{name}"%" or jbName like "%"#{name}"%" or bedNum like "%"#{name}"%" or principal like "%"#{name}"%" or door like "%"#{name}"%" or date like "%"#{name}"%" or type like "%"#{name}"%" or configured like "%"#{name}"%" or
+      statePlan like "%"#{name}"%"
+    </where>
+  </select>
+
+  <select id="getPersonOutManageCount" parameterType="int" resultType="com.zking.entity.personOutManage">
+    select count(*) count  from personOutManage
+  </select>
+
+  <select id="getPersonOutManageMaxId" parameterType="int" resultType="com.zking.entity.personOutManage">
+    select max(id) id from personOutManage
+  </select>
+
+  <select id="queryPersonOutManageById" parameterType="int" resultType="com.zking.entity.personOutManage">
+        select * from  personoutmanage where  id=#{id}
+  </select>
+
+
+</mapper>
