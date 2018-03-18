@@ -100,5 +100,4 @@ public List<personOutManage> pageQueryPersonOutManage(int begin){
 
 
 
-
 }

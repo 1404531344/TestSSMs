@@ -23,7 +23,7 @@
     <span>位置：</span>
     <ul class="placeul">
     <li><a href="#">首页</a></li>
-    <li><a href="person.html">患者基础数据</a></li>
+    <li><a href="person.html">科室</a></li>
     </ul>
    </div>   
 
@@ -66,6 +66,8 @@
                         <div class="form-group">
 
                             <input class="hidden" name="id" v-bind:value="person_By.id"  />
+
+                        </div>
 
 
                         <div class="form-group">
@@ -192,11 +194,13 @@
             conversion_stu:function () {
                 this.modal_title='增加';
                 var _this=this;
+
                 $.ajax({
                     url:'/getMaxIdOffice.action',
                     type:'get',
                     success:function (data) {
                          _this.person_By=data ;
+
                     }
                 });
 
@@ -213,6 +217,7 @@
                     url:"/queryAllByIdOffice.action",
                     success:function(data){
                         _this.person_By=data;
+                        console.log(data.id)
                     }
                 });
             },

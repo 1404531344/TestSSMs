@@ -7,17 +7,28 @@ public class tb_fu_office {
 
     private Integer count;
 
+    private personOutManage personOutManage;
+
     public tb_fu_office() {
     }
 
-    public tb_fu_office(Integer id, String office_name, Integer count) {
+
+    public tb_fu_office(Integer id, String office_name, Integer count, com.zking.entity.personOutManage personOutManage) {
         this.id = id;
         this.office_name = office_name;
         this.count = count;
+        this.personOutManage = personOutManage;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getOffice_name() {
-
         return office_name;
     }
 
@@ -33,12 +44,11 @@ public class tb_fu_office {
         this.count = count;
     }
 
-    public Integer getId() {
-
-        return id;
+    public com.zking.entity.personOutManage getPersonOutManage() {
+        return personOutManage;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setPersonOutManage(com.zking.entity.personOutManage personOutManage) {
+        this.personOutManage = personOutManage;
     }
 }

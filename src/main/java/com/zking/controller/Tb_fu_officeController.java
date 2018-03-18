@@ -3,7 +3,6 @@ package com.zking.controller;
 import com.alibaba.fastjson.JSON;
 import com.zking.dao.tb_fu_officeMapper;
 import com.zking.entity.tb_fu_office;
-import com.zking.entity.tb_fu_patient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +19,7 @@ import java.util.List;
 @Controller
 public class Tb_fu_officeController {
     @Autowired
-    tb_fu_officeMapper tb_fu_officeMapper;
+    tb_fu_officeMapper tb_fu_officeMapper ;
 
 
 
@@ -42,6 +41,19 @@ public class Tb_fu_officeController {
         tb_fu_office tb_fu_office=tb_fu_officeMapper.queryAllByIdOffice(id);
         return tb_fu_office;
     }
+
+    //    链表查询
+    @ResponseBody
+    @RequestMapping(value = "/getOffPer.action")
+    public List<tb_fu_office> getOffPer(String office_name){
+        List<tb_fu_office> tb_fu_office=tb_fu_officeMapper.getOffPer(office_name);
+        System.out.println(tb_fu_office.size());
+        return tb_fu_office;
+    }
+
+
+
+
 
     //    查询最大id
     @ResponseBody
@@ -71,6 +83,15 @@ public class Tb_fu_officeController {
         return list;
     }
 
+//    查询所有
+@ResponseBody
+@RequestMapping("getAllOffice")
+public List<tb_fu_office> getAllOffice() {
+    List<tb_fu_office> list = tb_fu_officeMapper.getAllOffice();
+    return list;
+}
+
+
 
     //    删除
     @ResponseBody
@@ -99,6 +120,9 @@ public class Tb_fu_officeController {
         String data=count.getCount().toString();
         return data;
     }
+
+
+
 
 
 

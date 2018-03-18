@@ -10,19 +10,19 @@
   <sql id="Base_Column_List" >
     ID, office_name
   </sql>
-  <select id="selectByPrimaryKeyOffice" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
     from tb_fu_office
-    where id = #{id,jdbcType=INTEGER}
+    where ID = #{id,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKeyOffice" parameterType="java.lang.Integer" >
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from tb_fu_office
     where ID = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insertOffice" parameterType="com.zking.entity.tb_fu_office" >
+  <insert id="insert" parameterType="com.zking.entity.tb_fu_office" >
     insert into tb_fu_office (ID, office_name)
-    values (#{id,jdbcType=INTEGER}, #{office_name,jdbcType=VARCHAR})
+    values (#{id,jdbcType=INTEGER}, #{officeName,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.zking.entity.tb_fu_office" >
     insert into tb_fu_office
@@ -30,7 +30,7 @@
       <if test="id != null" >
         ID,
       </if>
-      <if test="office_name != null" >
+      <if test="officeName != null" >
         office_name,
       </if>
     </trim>
@@ -38,50 +38,69 @@
       <if test="id != null" >
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="office_name != null" >
-        #{office_name,jdbcType=VARCHAR},
+      <if test="officeName != null" >
+        #{officeName,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.zking.entity.tb_fu_office" >
     update tb_fu_office
     <set >
-      <if test="office_name != null" >
-        office_name = #{office_name,jdbcType=VARCHAR},
+      <if test="officeName != null" >
+        office_name = #{officeName,jdbcType=VARCHAR},
       </if>
     </set>
     where ID = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKeyOffice" parameterType="com.zking.entity.tb_fu_office" >
+  <update id="updateByPrimaryKey"  parameterType="com.zking.entity.tb_fu_office" >
     update tb_fu_office
-    set office_name = #{office_name,jdbcType=VARCHAR}
+    set office_name = #{officeName,jdbcType=VARCHAR}
     where ID = #{id,jdbcType=INTEGER}
   </update>
 
-  <select id="pageQueryTb_fu_office" resultType="com.zking.entity.tb_fu_office">
-    select * from tb_fu_office limit #{begin},5
-  </select>
-
   <select id="queryLikeTb_fu_office" parameterType="int" resultType="com.zking.entity.tb_fu_office" >
-    select <include refid="Base_Column_List"/> from tb_fu_office
-    <where>
-      ID  like "%"#{office_name}"%" or  office_name like "%"#{office_name}"%"
-    </where>
+  select <include refid="Base_Column_List"/> from tb_fu_office
+  <where>
+  ID  like "%"#{office_name}"%" or  office_name like "%"#{office_name}"%"
+  </where>
   </select>
 
-  <select id="getMaxIdOffice" parameterType="int" resultType="com.zking.entity.tb_fu_office">
-    select max(id) id from tb_fu_office
+  <select id="pageQueryTb_fu_office" resultType="com.zking.entity.tb_fu_office">
+  select * from tb_fu_office limit #{begin},5
   </select>
 
 
   <select id="queryAllByIdOffice" parameterType="int" resultType="com.zking.entity.tb_fu_office">
-    select * from  tb_fu_office where  id=#{id}
+  select * from  tb_fu_office where  id=#{id}
   </select>
 
   <select id="getCountOffice" parameterType="int" resultType="com.zking.entity.tb_fu_office">
-    select count(*) count  from tb_fu_office
+  select count(*) count  from tb_fu_office
   </select>
 
 
+  <select id="getAllOffice" parameterType="int" resultType="com.zking.entity.tb_fu_office">
+  select * from tb_fu_office
+  </select>
 
+
+  <!--&lt;!&ndash;链表查询一对一&ndash;&gt;-->
+  <resultMap type="com.zking.entity.tb_fu_office" id="tb_fu_officetMap">
+  <id property="id" column="off_id" />
+  <result property="office_name" column="office_name" />
+  <association property="personOutManage"  javaType="com.zking.entity.personOutManage">
+  <id property="id" column="id" />
+  <result property="door" column="door" />
+  <result property="sex" column="sex" />
+  <result property="age" column="age" />
+  <result property="mobile" column="mobile" />
+  <result property="jbname" column="jbname" />
+  <result property="bednum" column="bednum" />
+  <result property="date" column="date" />
+  <result property="configured" column="configured" />
+  </association>
+  </resultMap>
+  <select id="getOffPer" parameterType="String" resultMap="tb_fu_officetMap">
+  select o.office_name,p.name,p.sex,p.age,p.mobile,p.jbname,p.bednum,p.date,p.principal,p.configured  from tb_fu_office o, personoutmanage p where o.office_name=p.door and o.office_name=#{office_name}
+  </select>
 </mapper>
