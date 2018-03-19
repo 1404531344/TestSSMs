@@ -91,16 +91,19 @@
   <association property="personOutManage"  javaType="com.zking.entity.personOutManage">
   <id property="id" column="id" />
   <result property="door" column="door" />
+    <result property="name" column="name" />
   <result property="sex" column="sex" />
   <result property="age" column="age" />
   <result property="mobile" column="mobile" />
   <result property="jbname" column="jbname" />
   <result property="bednum" column="bednum" />
   <result property="date" column="date" />
+    <result property="principal" column="principal" />
+    <result property="type" column="type" />
   <result property="configured" column="configured" />
   </association>
   </resultMap>
   <select id="getOffPer" parameterType="String" resultMap="tb_fu_officetMap">
-  select o.office_name,p.name,p.sex,p.age,p.mobile,p.jbname,p.bednum,p.date,p.principal,p.configured  from tb_fu_office o, personoutmanage p where o.office_name=p.door and o.office_name=#{office_name}
+  select o.office_name,p.*  from tb_fu_office o, personoutmanage p where o.office_name=p.door and o.office_name=#{office_name}
   </select>
 </mapper>

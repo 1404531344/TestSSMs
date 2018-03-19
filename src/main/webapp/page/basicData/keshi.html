@@ -270,6 +270,7 @@
                     url:"/getCountOffice.action",
                     success:function(data){
                         _this.count=data;
+                        console.log("_this.count"+_this.count)
                         _this.getMaxPage();
                     }
                 });
@@ -333,6 +334,7 @@
                 if(_this.count%5!=0){
                     totalPage+=1;
                     _this.totalPage=totalPage;
+                    console.log("_this.totalPage:"+_this.totalPage)
 
                 }
 

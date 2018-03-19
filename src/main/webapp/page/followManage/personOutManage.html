@@ -144,26 +144,26 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label" >配置状态</label>
-                            <div class="col-sm-9">
-                                <select name="configured" id="configured">
-                                    <option value ="未配置">未配置</option>
-                                    <option value ="已配置">已配置</option>
-                                </select>
-                            </div>
-                        </div>
+                        <!--<div class="form-group">-->
+                            <!--<label class="col-sm-3 control-label" >配置状态</label>-->
+                            <!--<div class="col-sm-9">-->
+                                <!--<select name="configured" id="configured">-->
+                                    <!--<option value ="未配置">未配置</option>-->
+                                    <!--<option value ="已配置">已配置</option>-->
+                                <!--</select>-->
+                            <!--</div>-->
+                        <!--</div>-->
 
 
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label" >计划状态</label>
-                            <div class="col-sm-9">
-                            <select name="stateplan" id="stateplan">
-                                <option value ="正在进行中">正在进行中</option>
-                                <option value ="已完成">已完成</option>
-                            </select>
-                        </div>
-                        </div>
+                        <!--<div class="form-group">-->
+                            <!--<label class="col-sm-3 control-label" >计划状态</label>-->
+                            <!--<div class="col-sm-9">-->
+                            <!--<select name="stateplan" id="stateplan">-->
+                                <!--<option value ="正在进行中">正在进行中</option>-->
+                                <!--<option value ="已完成">已完成</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                        <!--</div>-->
 
 
                     </div>
@@ -189,8 +189,8 @@
             <td>科室名称</td>
             <td>出院日期</td>
             <td>就诊类型</td>
-            <td>配置状态</td>
-            <td>计划状态</td>
+            <!--<td>配置状态</td>-->
+            <!--<td>计划状态</td>-->
             <td>操作</td>
         </tr>
         <tr v-for="p in personOutManage"  >
@@ -205,8 +205,8 @@
             <td >{{p.door}}</td>
             <td >{{p.date}}</td>
             <td >{{p.type}}</td>
-            <td >{{p.configured}}</td>
-            <td >{{p.stateplan}}</td>
+            <!--<td >{{p.configured}}</td>-->
+            <!--<td >{{p.stateplan}}</td>-->
             <td><button style="width:50px ;height:25px ;font-size: 10px"  v-on:click="queryById_stu(p.id)" type="button"  data-toggle="modal" data-target="#student" >修改</button> &nbsp;&nbsp;  <button style="width:50px ;height:25px ;font-size: 10px"  v-on:click="del_(p.id)" data-toggle="modal"  data-target="#myConfirm" type="button">删除</button></td>
         </tr>
         <tr id="page">
@@ -361,20 +361,20 @@
                         }
 
                     //配置状态选中
-                        var configVal=data.configured;
-                        if(configVal == '未配置'){
-                            $("#configured option[value='未配置']").attr('selected',true);
-                        }else {
-                            $("#configured option[value='已配置']").attr('selected',true);
-                        }
+                    //     var configVal=data.configured;
+                    //     if(configVal == '未配置'){
+                    //         $("#configured option[value='未配置']").attr('selected',true);
+                    //     }else {
+                    //         $("#configured option[value='已配置']").attr('selected',true);
+                    //     }
 
                     //    计划状态选中
-                        var stateplanVal=data.stateplan;
-                        if(stateplanVal == '已完成'){
-                            $("#stateplan option[value='已完成']").attr('selected',true);
-                        }else {
-                            $("#stateplan option[value='正在进行中']").attr('selected',true);
-                        }
+                    //     var stateplanVal=data.stateplan;
+                    //     if(stateplanVal == '已完成'){
+                    //         $("#stateplan option[value='已完成']").attr('selected',true);
+                    //     }else {
+                    //         $("#stateplan option[value='正在进行中']").attr('selected',true);
+                    //     }
 
 
                     }

@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6b2f356-3f11-4af8-87fb-bd587a6470dd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../TestSSM/src/main/webapp/images/123.jpg" />
       <change beforePath="$PROJECT_DIR$/../TestSSM/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../TestSSM/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/controller/PersonController.java" afterPath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/controller/PersonController.java" />
-      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/controller/Tb_fu_officeController.java" afterPath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/controller/Tb_fu_officeController.java" />
-      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/controller/personOutManageController.java" afterPath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/controller/personOutManageController.java" />
-      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/tb_fu_officeMapper.java" afterPath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/tb_fu_officeMapper.java" />
-      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/entity/tb_fu_office.java" afterPath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/entity/tb_fu_office.java" />
       <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/tb_fu_officeMapper.xml" afterPath="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/tb_fu_officeMapper.xml" />
       <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/webapp/left.html" afterPath="$PROJECT_DIR$/../TestSSM/src/main/webapp/left.html" />
+      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/index.html" afterPath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/index.html" />
       <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/keshi.html" afterPath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/keshi.html" />
-      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/testperson.html" afterPath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/testperson.html" />
-      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followManege.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followPlanConfiguration.html" afterPath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followPlanConfiguration.html" />
       <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followTaskList.html" afterPath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followTaskList.html" />
+      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/personOutManage.html" afterPath="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/personOutManage.html" />
+      <change beforePath="$PROJECT_DIR$/../TestSSM/src/main/webapp/top.html" afterPath="$PROJECT_DIR$/../TestSSM/src/main/webapp/top.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,12 +36,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="followTaskList.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followTaskList.html">
+      <file leaf-file-name="keshi.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/keshi.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="3156">
+              <caret line="330" column="22" lean-forward="false" selection-start-line="330" selection-start-column="12" selection-end-line="330" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,81 +51,15 @@
       <file leaf-file-name="followPlanConfiguration.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followPlanConfiguration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6552">
-              <caret line="358" column="32" lean-forward="false" selection-start-line="358" selection-start-column="32" selection-end-line="358" selection-end-column="32" />
+            <state relative-caret-position="237">
+              <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
               <folding>
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#td#10;n#tr#1;n#table#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#td#10;n#tr#1;n#table#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#12932#12939#0" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#13791#14815#0" expanded="false" />
-                <element signature="e#16022#16041#0" expanded="false" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="27" column="150" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="150" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="left.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/left.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1848">
-              <caret line="77" column="112" lean-forward="false" selection-start-line="77" selection-start-column="104" selection-end-line="77" selection-end-column="112" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tb_fu_patientMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/tb_fu_patientMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2856">
-              <caret line="119" column="35" lean-forward="false" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="35" />
-              <folding>
-                <marker date="1521248822526" expanded="true" signature="925:1033" ph="select from tb_fu_patient" />
-                <marker date="1521248822526" expanded="true" signature="1118:1181" ph="delete from tb_fu_patient... " />
-                <marker date="1521248822526" expanded="true" signature="1279:1533" ph="insert into tb_fu_patient... " />
-                <marker date="1521248822526" expanded="true" signature="2671:3159" ph="update tb_fu_patient... " />
-                <marker date="1521248822526" expanded="true" signature="3260:3523" ph="update tb_fu_patient... " />
-                <marker date="1521248822526" expanded="true" signature="3643:3684" ph="select count... " />
-                <marker date="1521248822526" expanded="true" signature="4214:4250" ph="select max(i... tb_fu_patient" />
-                <marker date="1521248822526" expanded="true" signature="4374:4418" ph="select * fro... tb_fu_patient" />
-                <marker date="1521248822526" expanded="true" signature="4519:4563" ph="select * fro... tb_fu_patient" />
-                <marker date="1521248822526" expanded="true" signature="4683:4719" ph="select max(i... tb_fu_patient" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="followPlanExecute.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followPlanExecute.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -134,42 +67,89 @@
       <file leaf-file-name="tb_fu_officeMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/tb_fu_officeMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2520">
-              <caret line="105" column="9" lean-forward="false" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+            <state relative-caret-position="331">
+              <caret line="101" column="40" lean-forward="false" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
               <folding>
-                <marker date="1521366147292" expanded="true" signature="646:754" ph="select from tb_fu_office" />
-                <marker date="1521366147292" expanded="true" signature="841:903" ph="delete from tb_fu_office... " />
-                <marker date="1521366147292" expanded="true" signature="990:1100" ph="insert into tb_fu_office... " />
-                <marker date="1521366147292" expanded="true" signature="1756:1939" ph="update tb_fu_office... " />
-                <marker date="1521366147292" expanded="true" signature="2039:2149" ph="update tb_fu_office... " />
-                <marker date="1521366147292" expanded="true" signature="2519:2562" ph="select * fro... tb_fu_office" />
-                <marker date="1521366147292" expanded="true" signature="2677:2720" ph="select * fro... tb_fu_office" />
-                <marker date="1521366147292" expanded="true" signature="2830:2870" ph="select count... " />
-                <marker date="1521366147292" expanded="true" signature="2979:3005" ph="select * fro... tb_fu_office" />
-                <marker date="1521366147292" expanded="true" signature="3828:4026" ph="select o.off... tb_fu_office" />
+                <marker date="1521456518064" expanded="true" signature="646:754" ph="select from tb_fu_office" />
+                <marker date="1521456518064" expanded="true" signature="841:903" ph="delete from tb_fu_office... " />
+                <marker date="1521456518064" expanded="true" signature="990:1100" ph="insert into tb_fu_office... " />
+                <marker date="1521456518064" expanded="true" signature="1756:1939" ph="update tb_fu_office... " />
+                <marker date="1521456518064" expanded="true" signature="2039:2149" ph="update tb_fu_office... " />
+                <marker date="1521456518064" expanded="true" signature="2519:2562" ph="select * fro... tb_fu_office" />
+                <marker date="1521456518064" expanded="true" signature="2677:2720" ph="select * fro... tb_fu_office" />
+                <marker date="1521456518064" expanded="true" signature="2830:2870" ph="select count... " />
+                <marker date="1521456518064" expanded="true" signature="2979:3005" ph="select * fro... tb_fu_office" />
+                <marker date="1521456518064" expanded="true" signature="3973:4097" ph="select o.off... tb_fu_office" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tb_fu_officeMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/tb_fu_officeMapper.java">
+      <file leaf-file-name="top.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/top.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="168">
+              <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="37" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="left.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/left.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tb_fu_officeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/controller/Tb_fu_officeController.java">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="48" column="53" lean-forward="false" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+            <state relative-caret-position="190">
+              <caret line="78" column="113" lean-forward="true" selection-start-line="78" selection-start-column="113" selection-end-line="78" selection-end-column="113" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1521447183569" expanded="true" signature="437:461" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leftline.gif" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/leftline.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leftico.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/leftico.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lefttop.gif" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/lefttop.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-360">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,9 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>type</find>
-      <find>option</find>
-      <find>stateplanVal</find>
       <find>login</find>
       <find>getcont</find>
       <find>count</find>
@@ -212,11 +189,14 @@
       <find>queryOffice_personOut</find>
       <find>queryAllByIdOffice</find>
       <find>getAllOffice</find>
-      <find>getMaxCount</find>
       <find>form2</find>
       <find>queryLike_b</find>
       <find>personOutManage</find>
       <find>office_val</find>
+      <find>type</find>
+      <find>topleft</find>
+      <find>getMaxCount</find>
+      <find>getMaxPage</find>
     </findStrings>
     <replaceStrings>
       <replace>Tb_ fu_office</replace>
@@ -236,18 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zking/mappingXml/personOutManageMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zking/controller/Tb_fu_patienController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zking/mappingXml/tb_fu_patientMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/basicData/testperson.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/basicData/person.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/left.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/page/basicData/person.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zking/entity/tb_fu_office.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zking/controller/KeshiController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zking/mappingXml/tb_fu_officeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zking/dao/tb_fu_officeMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zking/controller/Tb_fu_officeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zking/mappingXml/tb_fu_userMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zking/mappingXml/tb_fu_patientMapper.xml" />
@@ -287,6 +255,18 @@
         <option value="$PROJECT_DIR$/src/main/webapp/page/followManage/followPlanConfiguration.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/left.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/page/followManage/followTaskList.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/page/followManage/followTaskList.html" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/personOutManage.html" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followTaskList.html" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/person.html" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/left.html" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/personXX.html" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/index.html" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/keshi.html" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/tb_fu_officeMapper.xml" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followPlanConfiguration.html" />
+        <option value="$PROJECT_DIR$/../TestSSM/src/main/webapp/top.html" />
       </list>
     </option>
   </component>
@@ -365,8 +345,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -462,7 +440,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestSSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestSSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestSSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="basicData" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TestSSM" type="b2602c69:ProjectViewProjectNode" />
@@ -485,40 +480,42 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../////////////////ActivitiTest_01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/..//////////////////ActivitiTest_01" />
     <property name="vcs.patch.path" value="$PROJECT_DIR$" />
     <property name="vcs.patch.to.clipboard" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\TestSSM\src\main\webapp\plugs\bootstrap\css" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\TestSSM\src\main\webapp\images" />
       <recent name="F:\TestSSM\src\main\webapp\page\basicData" />
       <recent name="F:\TestSSM\src\main\java\com\zking\mappingXml" />
-      <recent name="F:\TestSSM\src\main\webapp\css" />
+      <recent name="F:\TestSSM\src\main\java\com\zking\entity" />
+      <recent name="F:\TestSSM\src\main\java\com\zking\dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zking.controller" />
       <recent name="com.zking.dao" />
       <recent name="com.zking.entity" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\TestSSM\src\main\java\com\zking\mappingXml" />
-      <recent name="F:\TestSSM\src\main\java\com\zking\entity" />
-      <recent name="F:\TestSSM\src\main\java\com\zking\dao" />
-      <recent name="F:\TestSSM\src\main\java\com\zking\controller" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\TestSSM\src\main\webapp\plugs\bootstrap\css" />
       <recent name="F:\TestSSM\src\main\webapp\page\basicData" />
+      <recent name="F:\TestSSM\src\main\java\com\zking\mappingXml" />
+      <recent name="F:\TestSSM\src\main\webapp\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -870,7 +867,8 @@
       <workItem from="1521302185050" duration="3612000" />
       <workItem from="1521305949528" duration="2959000" />
       <workItem from="1521333967154" duration="21048000" />
-      <workItem from="1521370736257" duration="37000" />
+      <workItem from="1521370736257" duration="2246000" />
+      <workItem from="1521420615928" duration="21556000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1520425366161</created>
@@ -928,11 +926,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521254688364</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="e">
+      <created>1521370831249</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1521370831249</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338169000" />
+    <option name="totallyTimeSpent" value="361934000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -945,13 +950,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32888147" sideWeight="0.51059" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5609349" sideWeight="0.5136157" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5993322" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27712855" sideWeight="0.5098336" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2526475" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5609349" sideWeight="0.48940998" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19866444" sideWeight="0.49016643" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -960,6 +966,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34056762" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4006678" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -968,8 +975,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.046744574" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30181542" sideWeight="0.49415693" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33358547" sideWeight="0.50584304" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -978,10 +985,46 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4006678" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5609349" sideWeight="0.5136157" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5993322" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27712855" sideWeight="0.5098336" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2526475" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58931553" sideWeight="0.49016643" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20045386" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2602118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34056762" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4006678" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.046744574" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33358547" sideWeight="0.49415693" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33358547" sideWeight="0.50584304" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -997,17 +1040,11 @@
     <MESSAGE value="b" />
     <MESSAGE value="c" />
     <MESSAGE value="d" />
-    <option name="LAST_COMMIT_MESSAGE" value="d" />
+    <MESSAGE value="e" />
+    <option name="LAST_COMMIT_MESSAGE" value="e" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/page/basicData/person.html</url>
-          <line>294</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager>
@@ -1021,66 +1058,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/studentMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/studentMapper.java" />
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/login/img/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="310" column="42" lean-forward="false" selection-start-line="310" selection-start-column="42" selection-end-line="310" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/controller/studentController.java" />
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/entity/tb_fu_user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/entity/person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/ClassDao.java" />
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/baseDao.java" />
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/tb_fu_userMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/PersonDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1091,13 +1068,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/Test.java" />
     <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/controller/followPlanConfigurationController.java" />
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/personOutManage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="209" column="106" lean-forward="false" selection-start-line="209" selection-start-column="74" selection-end-line="209" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1109,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,6 +1140,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-240">
           <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,29 +1168,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/personOutManageMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3216">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding>
-            <marker date="1521269336867" expanded="true" signature="1576:1687" ph="select from personoutmanage" />
-            <marker date="1521269336867" expanded="true" signature="1774:1839" ph="delete from personoutmanage... " />
-            <marker date="1521269336867" expanded="true" signature="1929:2477" ph="insert into personoutmanage... " />
-            <marker date="1521269336867" expanded="true" signature="4693:5855" ph="update personoutmanage... " />
-            <marker date="1521269336867" expanded="true" signature="5957:6526" ph="update personoutmanage... " />
-            <marker date="1521269336867" expanded="true" signature="6623:6652" ph="select * fro... personOutManage" />
-            <marker date="1521269336867" expanded="true" signature="6757:6803" ph="select * fro... personOutManage" />
-            <marker date="1521269336867" expanded="true" signature="7521:7564" ph="select count... " />
-            <marker date="1521269336867" expanded="true" signature="7688:7726" ph="select max(i... personOutManage" />
-            <marker date="1521269336867" expanded="true" signature="7855:7901" ph="select * fro... personoutmanage" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/resources/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,34 +1190,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/personOutManageMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/entity/tb_fu_office.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#518#519#0" expanded="false" />
-            <element signature="e#543#544#0" expanded="false" />
-            <element signature="e#580#581#0" expanded="false" />
-            <element signature="e#608#609#0" expanded="false" />
-            <element signature="e#646#647#0" expanded="false" />
-            <element signature="e#680#681#0" expanded="false" />
-            <element signature="e#734#735#0" expanded="false" />
-            <element signature="e#780#781#0" expanded="false" />
-            <element signature="e#813#814#0" expanded="false" />
-            <element signature="e#841#842#0" expanded="false" />
-            <element signature="e#884#885#0" expanded="false" />
-            <element signature="e#918#919#0" expanded="false" />
-            <element signature="e#986#987#0" expanded="false" />
-            <element signature="e#1024#1025#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1275,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-323">
           <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,32 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="117" column="13" lean-forward="true" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/keshi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="48" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="364" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/person.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="225" column="21" lean-forward="false" selection-start-line="225" selection-start-column="21" selection-end-line="225" selection-end-column="21" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#10546#10938#0" expanded="false" />
-            <element signature="e#10603#10922#0" expanded="false" />
-            <element signature="e#10779#10904#0" expanded="false" />
-            <element signature="e#10996#11329#0" expanded="false" />
-            <element signature="e#11384#11531#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1332,13 +1230,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1589">
           <caret line="337" column="46" lean-forward="false" selection-start-line="337" selection-start-column="45" selection-end-line="337" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/tb_fu_officeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1368,55 +1259,87 @@
         <state relative-caret-position="960">
           <caret line="48" column="53" lean-forward="false" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/tb_fu_officeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/personOutManageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="105" column="9" lean-forward="false" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+        <state relative-caret-position="-192">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
-            <marker date="1521366147292" expanded="true" signature="646:754" ph="select from tb_fu_office" />
-            <marker date="1521366147292" expanded="true" signature="841:903" ph="delete from tb_fu_office... " />
-            <marker date="1521366147292" expanded="true" signature="990:1100" ph="insert into tb_fu_office... " />
-            <marker date="1521366147292" expanded="true" signature="1756:1939" ph="update tb_fu_office... " />
-            <marker date="1521366147292" expanded="true" signature="2039:2149" ph="update tb_fu_office... " />
-            <marker date="1521366147292" expanded="true" signature="2519:2562" ph="select * fro... tb_fu_office" />
-            <marker date="1521366147292" expanded="true" signature="2677:2720" ph="select * fro... tb_fu_office" />
-            <marker date="1521366147292" expanded="true" signature="2830:2870" ph="select count... " />
-            <marker date="1521366147292" expanded="true" signature="2979:3005" ph="select * fro... tb_fu_office" />
-            <marker date="1521366147292" expanded="true" signature="3828:4026" ph="select o.off... tb_fu_office" />
+            <marker date="1521269336867" expanded="true" signature="1576:1687" ph="select from personoutmanage" />
+            <marker date="1521269336867" expanded="true" signature="1774:1839" ph="delete from personoutmanage... " />
+            <marker date="1521269336867" expanded="true" signature="1929:2477" ph="insert into personoutmanage... " />
+            <marker date="1521269336867" expanded="true" signature="4693:5855" ph="update personoutmanage... " />
+            <marker date="1521269336867" expanded="true" signature="5957:6526" ph="update personoutmanage... " />
+            <marker date="1521269336867" expanded="true" signature="6623:6652" ph="select * fro... personOutManage" />
+            <marker date="1521269336867" expanded="true" signature="6757:6803" ph="select * fro... personOutManage" />
+            <marker date="1521269336867" expanded="true" signature="7521:7564" ph="select count... " />
+            <marker date="1521269336867" expanded="true" signature="7688:7726" ph="select max(i... personOutManage" />
+            <marker date="1521269336867" expanded="true" signature="7855:7901" ph="select * fro... personoutmanage" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followPlanConfiguration.html">
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followPlanExecute.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6552">
-          <caret line="358" column="32" lean-forward="false" selection-start-line="358" selection-start-column="32" selection-end-line="358" selection-end-column="32" />
+        <state relative-caret-position="480">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/personOutManageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/bcc.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/bcd.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/bcx.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/topleft.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followTaskList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="196" column="30" lean-forward="true" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
           <folding>
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#td#10;n#tr#1;n#table#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#td#10;n#tr#1;n#table#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12932#12939#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#13791#14815#0" expanded="false" />
-            <element signature="e#16022#16041#0" expanded="false" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2186#2193#1" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#3;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#11487#11494#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1429,27 +1352,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followPlanExecute.html">
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/personOutManage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="-624">
+          <caret line="131" column="59" lean-forward="false" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/person.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="301" column="40" lean-forward="false" selection-start-line="301" selection-start-column="30" selection-end-line="301" selection-end-column="40" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#10546#10938#0" expanded="false" />
+            <element signature="e#10603#10922#0" expanded="false" />
+            <element signature="e#10779#10904#0" expanded="false" />
+            <element signature="e#11384#11531#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/dao/tb_fu_officeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/personXX.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="259" column="44" lean-forward="false" selection-start-line="259" selection-start-column="44" selection-end-line="259" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/java/com/zking/mappingXml/tb_fu_officeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="101" column="40" lean-forward="false" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+          <folding>
+            <marker date="1521456518064" expanded="true" signature="646:754" ph="select from tb_fu_office" />
+            <marker date="1521456518064" expanded="true" signature="841:903" ph="delete from tb_fu_office... " />
+            <marker date="1521456518064" expanded="true" signature="990:1100" ph="insert into tb_fu_office... " />
+            <marker date="1521456518064" expanded="true" signature="1756:1939" ph="update tb_fu_office... " />
+            <marker date="1521456518064" expanded="true" signature="2039:2149" ph="update tb_fu_office... " />
+            <marker date="1521456518064" expanded="true" signature="2519:2562" ph="select * fro... tb_fu_office" />
+            <marker date="1521456518064" expanded="true" signature="2677:2720" ph="select * fro... tb_fu_office" />
+            <marker date="1521456518064" expanded="true" signature="2830:2870" ph="select count... " />
+            <marker date="1521456518064" expanded="true" signature="2979:3005" ph="select * fro... tb_fu_office" />
+            <marker date="1521456518064" expanded="true" signature="3973:4097" ph="select o.off... tb_fu_office" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followPlanConfiguration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/basicData/keshi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3156">
+          <caret line="330" column="22" lean-forward="false" selection-start-line="330" selection-start-column="12" selection-end-line="330" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/lefttop.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/left.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
-          <caret line="77" column="112" lean-forward="false" selection-start-line="77" selection-start-column="104" selection-end-line="77" selection-end-column="112" />
+        <state relative-caret-position="160">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/page/followManage/followTaskList.html">
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/leftico.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/images/leftline.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../TestSSM/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="190">
+          <caret line="78" column="113" lean-forward="true" selection-start-line="78" selection-start-column="113" selection-end-line="78" selection-end-column="113" />
+          <folding>
+            <marker date="1521447183569" expanded="true" signature="437:461" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

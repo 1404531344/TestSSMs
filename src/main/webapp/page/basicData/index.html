@@ -20,11 +20,27 @@
     </div>
     
    <div>
-   	
-   	<h2> 这是index</h2>
-   </div>
+
+       <div id="app">
+           <ul>
+               <li v-for="n in 10">
+                   {{ n }}
+               </li>
+           </ul>
+       </div>
 
 
+
+
+    <script src="../../plugs/jquery/jquery.min.js"></script>
+    <!--<script src="../../plugs/bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../plugs/js/vue.min.js"></script>
+       <script>
+           new Vue({
+               el: '#app'
+           })
+       </script>
 
 </body>
 </html>
